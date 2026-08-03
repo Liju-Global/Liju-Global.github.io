@@ -315,11 +315,10 @@ a:focus-visible, button:focus-visible{ outline:3px solid var(--cyan); outline-of
 
 .item img{
     width:100%;
-    height:220px;
+    aspect-ratio:1/1;
+    height:auto;
     object-fit:cover;
-    display:block;
 }
-
 .item .name{
     text-align:center;
     padding:15px;
@@ -332,4 +331,162 @@ a:focus-visible, button:focus-visible{ outline:3px solid var(--cyan); outline-of
     width:60px;      /* Adjust as needed */
     height:auto;
     display:block;
+}
+
+/* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width: 992px){
+
+    section{
+        padding:70px 0;
+    }
+
+    .proof-sheet{
+        padding:40px 30px;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .swatch-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .item img{
+        height:180px;
+    }
+
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    .container{
+        width:94%;
+    }
+
+    .hero{
+        padding:40px 0 20px;
+    }
+
+    .proof-sheet{
+        padding:28px 20px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+        line-height:1.15;
+    }
+
+    .intro{
+        font-size:1rem;
+    }
+
+    .hero-ctas{
+        flex-direction:column;
+    }
+
+    .hero-ctas .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .docket{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .service,
+    .service.reverse{
+        flex-direction:column;
+        gap:24px;
+        text-align:center;
+    }
+
+    .service-panel{
+        max-width:260px;
+    }
+
+    .service h3{
+        font-size:1.4rem;
+    }
+
+    .swatch-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:14px;
+    }
+
+    .item img{
+        height:150px;
+    }
+
+    .contact-card{
+        padding:24px;
+    }
+
+    .contact-row{
+        flex-direction:column;
+        gap:6px;
+    }
+
+    .clabel{
+        min-width:auto;
+    }
+
+    .foot-row{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+
+/* ===========================
+   SMALL PHONES
+=========================== */
+
+@media (max-width:480px){
+
+    .logo img{
+        width:48px;
+    }
+
+    .brand-name{
+        font-size:.8rem;
+    }
+
+    .hero h1{
+        font-size:1.7rem;
+    }
+
+    .section-head h2{
+        font-size:1.6rem;
+    }
+
+    .swatch-grid{
+        grid-template-columns:1fr;
+    }
+
+    .item img{
+        height:220px;
+    }
+
+    .btn{
+        padding:14px 20px;
+    }
+
+    #topBtn{
+        right:15px;
+        bottom:15px;
+        width:42px;
+        height:42px;
+    }
+
 }
