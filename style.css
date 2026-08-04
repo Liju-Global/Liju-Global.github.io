@@ -410,3 +410,38 @@ a:focus-visible, button:focus-visible{ outline:3px solid var(--cyan); outline-of
     justify-content:center;
     text-align:center;
 }
+
+/* ===========================
+   MOBILE CATALOG
+=========================== */
+
+@media screen and (max-width: 768px){
+
+    .swatch-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:16px;
+    }
+
+    .image-box{
+        height:180px;
+        padding:10px;
+    }
+
+    .item .name{
+        font-size:0.9rem;
+        padding:12px;
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+    .swatch-grid{
+        grid-template-columns:1fr;
+    }
+
+    .image-box{
+        height:220px;
+    }
+
+}
