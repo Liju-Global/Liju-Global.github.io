@@ -177,9 +177,15 @@ section{ padding:90px 0; }
    SERVICES
 =========================== */
 .service{
-  display:flex; align-items:center; gap:56px; margin-bottom:64px;
-}
-.service.reverse{ flex-direction:row-reverse; }
+    display:flex;
+    align-items:center;
+    gap:56px;
+    margin-bottom:32px;
+
+    border:1px solid var(--line);
+    padding:30px;
+    background:#fff;
+}.service.reverse{ flex-direction:row-reverse; }
 .service-text{ flex:1.1; }
 .spec{
   display:inline-block; font-size:0.75rem; letter-spacing:0.08em; color:var(--ink-soft);
@@ -442,6 +448,19 @@ a:focus-visible, button:focus-visible{ outline:3px solid var(--cyan); outline-of
 
     .image-box{
         height:220px;
+    }
+
+}
+
+
+@media (max-width:820px){
+
+    .service,
+    .service.reverse{
+        flex-direction:column;
+        text-align:center;
+        padding:20px;
+        gap:24px;
     }
 
 }
