@@ -181,11 +181,18 @@ section{ padding:90px 0; }
     align-items:center;
     gap:56px;
     margin-bottom:32px;
-
     border:1px solid var(--line);
     padding:30px;
     background:#fff;
-}.service.reverse{ flex-direction:row-reverse; }
+    transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.service:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 24px rgba(0,0,0,.08);
+}
+
+.service.reverse{ flex-direction:row-reverse; }
 .service-text{ flex:1.1; }
 .spec{
   display:inline-block; font-size:0.75rem; letter-spacing:0.08em; color:var(--ink-soft);
